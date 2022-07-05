@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@500&family=Montserrat:wght@700&display=swap');
+
+#container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+#head {
+  display: flex;
+  margin-top: 36.5px;
+  width: 100%;
+  align-items: center;
+  padding-bottom: 2rem;
+}
+
+.back {
+  margin-right: 15px;
+}
+
+#title {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 23px;
+}
+
+#form-wrapper {
+    width: 100%;
+}
+
+#login {
+
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  align-items: center;
+}
+
+#name {
+  position: relative;
+  width: 100%;
+
+  height: 80px;
+}
+
+#surname {
+  position: relative;
+  width: 100%;
+
+  height: 80px;
+  margin-top: 30px;
+}
+
+#badge {
+  position: relative;
+  width: 100%;
+
+  height: 80px;
+  margin-top: 30px;
+}
+
+#buttonLogin {
+  position: relative;
+  width: 100%;
+
+  height: 54px;
+  margin: 3rem auto 2rem auto;
+}
+
+.validation {
+  font-family: "Hind Madurai";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #eb5757;
+  margin-top: 5px;
+}
+
+#logout {
+  width: 319px;
+  height: 54px;
+  justify-content: center;
+  font-family: "Hind Madurai";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  position: fixed;
+  bottom: 3%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.links {
+  height: 58px;
+  width: 100%;
+  border-bottom: 1px solid lightgray;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+}
+
+.links > a {
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  color: inherit;
+  font-family: "Hind Madurai";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+}

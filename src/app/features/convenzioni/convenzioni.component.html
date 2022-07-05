@@ -1,0 +1,20 @@
+<div *ngIf="!loading" class="cards">
+  <app-card
+  [@fadeInOnEnter] [@fadeOutRightOnLeave]
+    *ngFor="let c of convenzioni"
+    class="card"
+    title="{{ c.titolo }}"
+    text="{{ c.text }}"
+    [link]="c.url"
+    textLink="{{ c.titoloLink }}"
+    convenzioniId="{{ c._id }}"
+    (deletePost)="deleteConvenzione(c._id)"
+    background="{{'#f0f0f0'}}"
+
+
+  ></app-card>
+</div>
+
+<div *ngIf="loading" class="cards-loader">
+  <app-gradient-loader *ngFor="let c of [].constructor(5)" [@fadeInOnEnter]></app-gradient-loader>
+</div>

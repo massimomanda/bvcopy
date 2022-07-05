@@ -1,0 +1,9 @@
+
+<div [@routeAnimations]="getRouteAnimationData()">
+  <router-outlet></router-outlet>
+
+  <lib-toast *ngIf="isVisible" [text]="text" [icon]="icon" (noDeletePost)="undoAction()" [@fadeInUpOnEnter] [@fadeOutDownOnLeave]></lib-toast>
+  
+</div>
+
+<!-- <app-toast [text]="" [icon]="" (noDeletePost)="undoAction()"></app-toast> -->

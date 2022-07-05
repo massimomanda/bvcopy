@@ -1,0 +1,226 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Hind+Madurai&display=swap");
+
+/* #imgHello:hover {
+  animation: saluta 0.5s;
+  
+} */
+@keyframes saluta {
+  0% { transform:  rotate(0deg); }
+  40% { transform: rotate(5deg); }
+  60% { transform: rotate(-5deg); }
+  80% { transform: rotate(5deg); }
+  100% { transform: rotate(0deg); }
+}
+*::-webkit-scrollbar {
+  width: 3px;               /* width of the entire scrollbar */
+}
+
+*::-webkit-scrollbar-track {
+  background: rgba(243, 243, 243, 0);        /* color of the tracking area */
+}
+*::-webkit-scrollbar-thumb {
+  background-color: rgb(117, 117, 117);    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  /* border: 3px solid rgb(255, 255, 255);  creates padding around scroll thumb */
+}
+.saluta{
+  animation: saluta 0.8s infinite;
+  transform-origin: bottom right;
+}
+
+#header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 26px;
+  color: var(--bg-primary-color);
+
+}
+
+#imgHello {
+  width: 33px;
+  height: 33px;
+  margin-right: 20px;
+}
+
+#hello {
+  margin-top: 5px;
+}
+
+#img-loader-wrapper {
+    height: 35px;
+    width: 35px;
+    
+}
+
+.roundButtons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 10px;
+  font-family: "Hind Madurai";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  text-align: center;
+  padding: 2rem 0 3rem 0;
+  width: 100%;
+
+}
+
+.button {
+
+  width: 54px;
+  height: 54px;
+  
+}
+
+.button.invisible {
+  pointer-events: none;
+  visibility: hidden;
+}
+
+
+
+.active {
+  background-color: var(--bg-primary-color) !important;
+  background: var(--bg-primary-color) !important;
+  width: 54px!important;
+  height: 54px!important;
+  border-radius: 50%!important;
+  font-weight: 500!important;
+}
+
+#wrapper {
+  height: 100vh;
+  overflow: auto;
+  padding: 2rem;
+}
+
+.roundButtonsSide.active button {
+  background-color: var(--bg-primary-color) !important;
+}
+
+.roundButtonsSide {
+  display: flex;
+  flex-direction: column !important;
+  position: fixed !important;
+  text-align: center;
+  z-index: 10;
+  right: -50%;
+  margin: auto 0;
+  align-items: center !important;
+  background-color: transparent !important;
+  top: 50%;
+  transform: translateY(-50%);
+  justify-content: center;
+  
+
+}
+.roundButtonsSideScrollTop {
+  display: flex;
+  flex-direction: column !important;
+  position: fixed!important;
+  text-align: center;
+  z-index: 10;
+
+  margin: auto 0;
+  align-items: center !important;
+  background-color: transparent !important;
+
+  justify-content: center;
+  bottom: 0;
+  margin-right: 9px;
+  right: -50%;
+
+}
+
+.buttonSide {
+  margin-right: 25px;
+  width: 54px;
+  height: 54px;
+}
+
+.startAnimation {
+  right: 0;
+  animation-name: transizioneMargin;
+  animation-duration: 0.3s;
+}
+.endAnimation {
+  right: -50%;
+  animation-name: prova;
+  animation-duration: 0.3s;
+}
+
+.buttonScroll {
+  width: 54px;
+  height: 54px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border-radius: 50%;
+  background: white;
+}
+
+.backArrow {
+  position: absolute;
+  bottom: 0;
+  width: 48px;
+  height: 48px;
+  margin-bottom: 14px;
+}
+
+.endAnimation {
+  animation-name: prova;
+  animation-duration: 1s;
+}
+
+#profile {
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+
+}
+
+#welcome-wrapper {
+  display: flex;
+}
+
+.paddingBottomScroll{
+  padding-bottom: 1.5rem;
+}
+
+@keyframes transizioneMargin {
+  from {
+    right: -50%;
+  }
+  to {
+    right: 0;
+  }
+}
+@keyframes prova {
+  from {
+    right: 0;
+  }
+  to {
+    right: -50%;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  /*Big smartphones [426px -> 600px]*/
+  #wrapper {
+    padding: 2 1.5rem;
+
+  }
+
+}
